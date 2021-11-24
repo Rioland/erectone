@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/avpvgymy/public_html/erect1
+    - export DEPLOYPATH=/home4/avpvgymy/public_html/erect1
     - /bin/cp * $DEPLOYPATH

@@ -1,0 +1,128 @@
+#custom-content-above-tab{
+    justify-content: space-evenly;
+}
+
+.ref-con{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 30rem;
+    padding: 1vh;
+}
+.ref-con{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .ref-con>div{
+    flex: 75% 25%;
+} */
+
+.refin{
+    border: none;
+    height: 1rem;
+    padding: 2vh;
+    /* width: 20rem; */
+    /* min-width: 70%; */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+  .refin{width: 20rem;}
+ }
+
+.refbtn{
+    background: #007bff linear-gradient(180deg,#268fff,#007bff) repeat-x!important;
+    color: #fff;
+    padding: 2vh;
+    border-radius: 6px;
+    width: 1.6rem;
+    border: gray;
+}
+
+.aficons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.aficons>div{
+    padding: 1vh;
+}
+
+.hh{
+    padding-left: 2vmax;
+}
+
+/* --------- this id for pop-up --------------- */
+/* popover */
+details[data-popover] {
+  display: inline;
+  position: relative;
+}
+details[data-popover] > summary:focus {
+  outline: none;
+}
+details[data-popover] > summary::-webkit-details-marker {
+  display: none;
+}
+details[data-popover] > summary {
+  list-style: none;
+  text-decoration: underline dotted teal;
+}
+details[data-popover] > summary + * {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 350%;
+  border: solid 1px teal;
+  border-radius: 5%;
+  padding: 10px;
+  /* background: white; */
+  text-align:left;
+}
+details[data-popover] > * + * {
+  /* hide detail elements that would ruin the popover */
+  display: none;
+}
+details[data-popover="up"] > summary + * {
+  bottom: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+details[data-popover="down"] > summary + * {
+  top: calc(0.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+details[data-popover="left"] > summary + * {
+  right: calc(1rem + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+details[data-popover="right"] > summary + * {
+  left: calc(1rem + 100%);
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+/* wrapper setup */
+.popwrapper {
+  width: 100%;
+  padding: 250px;
+}
+
+.popback{
+    background-color: black !important;
+    color: white;
+    opacity: 2;
+}
+
+/* /. ------ end of pop up oooh -----------  */
+
+#revenue-chart,
+#sales-chart{
+    position: relative; 
+    min-height: 300px;
+}

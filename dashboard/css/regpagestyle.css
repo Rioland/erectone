@@ -1,0 +1,435 @@
+ * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+
+
+/* RESPONSIVE VIEW  */
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { 
+    .slidecontainer{display: none; }
+     .formbody{padding:10px;}
+    #bac{display:none;}
+    .formcontainer { width: 100%; max-width: 30em; height:auto;}  
+    .form-main-wrapper{ max-width:25em; width:100%;}
+    
+ }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .formcontainer { width: 100%; height:auto; }  
+    .slidecontainer{display: none; }
+    .formbody{padding:10px;}
+    .checkboxes{line-height: 16px;}
+    .min-display{display: block;}
+    .max-display{display: none;}
+      #bac{display:none;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+    .slidecontainer{ display: none;}
+    .formcontainer{width: 100%;}
+     .formbody{padding-left: 80px; padding-right: 80px;}
+     .txt{padding-left: 50px;}
+     .lgtxt{font-size: large;}
+  }
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+       .slidecontainer{display: block;}
+       .maincontainer{display:flex;flex-wrap:nowrap; flex-direction: column;}
+      .min-display{display:none;}
+      .max-display{display: block;}
+      .lgtxt{font-size: x-large;}
+      .back1:hover{padding-right: 5px;}
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+      .slidecontainer{display: block;}
+       .maincontainer{flex-wrap:nowrap;}
+       .formcontainer{flex: 65%;}
+       .formbody{padding-left: 200px; padding-right: 200px;}
+ }
+
+/* __________________________________________________________________  */
+
+.maincontainer{
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  background-color: #f5f7fa !important;
+  align-content: stretch;
+}
+/* .maincontainer>div{ width: 100%;} */
+
+.slidecontainer{
+  /* flex: 40%; */
+  min-height: 100%;
+}
+
+.formcontainer{
+   background-color: #f5f7fa;
+   min-height: 100%;
+  }
+  .formcontainer>div{
+    vertical-align: middle;
+  }
+
+    .toprightlogo{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 18px;
+      -webkit-animation:content-s 7.1s infinite;
+        -moz-animation:content-s 7.1s infinite;
+        animation:content-s 7.1s infinite;
+          }
+
+.formbody {
+    background-color: #f5f7fa !important;
+    width: auto;
+    text-align: justify;
+    min-height: 100%;
+}
+
+
+
+
+/* -- this is for input responsive ----  */
+/* _____________________________________  */
+/* * { box-sizing:border-box; } */
+
+/* basic stylings ------------------------------------------ */
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:40px; 
+  /* border: 1px solid green;
+  margin-left:10px ;
+  border-bottom: thin;
+  border-left: thin;
+  border-right: thin;
+  border-radius: 10px; */
+  outline-style: 2px solid lightgreen ;
+}
+.input ,#country				{
+  border-radius: 10px;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  height: auto;
+  border:none;
+  border-bottom:1px solid #757575;
+  padding-left: 10px;
+}
+input:focus ,#country:focus		{ outline:none; }
+
+/* LABEL ======================================= */
+.label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.input:focus ~ .label, .input:valid ~ .label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+/* ________________________________________** */
+    
+  #country{
+    padding-left: 26px;
+  }
+
+ .agreetxt{
+   padding-right: 20px;
+   font-weight: 400;
+   font-size: small;
+   margin-bottom: 20px;
+}
+ .agreebox{
+   height: 100px;
+   padding-right: 20px;
+   /* float: left; */
+   vertical-align: bottom;
+ }
+
+ /* .agreebox2{float: left;} */
+.checkboxes{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  height: 100%;
+  max-height:65px ;
+}
+
+.checkbox1{
+    height: 50px;
+    width: 50px;
+    border: none;
+    position: relative; 
+  }
+
+/*---- _____________________________________ ---- */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox1 {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  /* background-color: #ccc; */
+  border: 2px solid #1bb6c1;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1bb6c1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* -------------------------------------------  */
+
+.submitbtn{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.submitbtn:hover{
+  margin-top: 3px;
+}
+ .topic{
+   font-weight: bolder; 
+   opacity: 0.7;
+ }
+ 
+ .txt{
+   font-size: medium;
+   letter-spacing: 5px;
+   margin: auto;
+   padding-bottom: 10px;
+ }
+
+ .lgtxt{
+   /* font-weight: bolder; */
+   opacity: 0.6;
+ }
+
+ .back:hover{
+    letter-spacing: 5px;
+ }
+
+.lgcentrapic{
+  font-size: 2.4vw;
+  color: white;
+  font-weight: 800px;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+
+.loginpic{
+  max-width: 700px;
+}
+
+.loginoption{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  margin: auto;
+  justify-content: center;
+  align-content: space-between;
+  /* padding: 10px; */
+}
+
+.left-line, .right-line{
+  border-top: 2px solid #DBE1EA;
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.left-line{
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.alter-sign-in{
+ padding: 20px;
+ /* font-weight: bolder; */
+ opacity: 0.7;
+}
+
+.fa {
+  padding: 20px;
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 70px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.loginoptionbar{
+   display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  align-content: space-between;
+}
+.bftxt{
+  margin: auto;
+}
+
+.sub-topic{
+  color: #697c99;
+}

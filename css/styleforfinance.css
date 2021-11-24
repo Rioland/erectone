@@ -1,0 +1,125 @@
+
+        /* table style  */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* /.  */
+        /* for depo and withdraw btn */
+        .btnrow {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .btnrow>div {
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: lightskyblue;
+            max-width: 45%;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+        .btnrow>div:hover{
+            opacity: 0.5;
+        }
+        
+        .coinrow{
+             display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .coinrow>div{
+            margin-left: 10px;
+            margin-right: 10px;
+            max-width: 45%;
+            border-radius: 8px;
+            white-space: nowrap;
+            font-size: large;
+        }
+        
+        .icoin1{
+            text-align: left;
+        }
+
+        /* /.  */
+
+        .rere {
+            font-size: x-large;
+            color: lightskyblue;
+        }
+
+        .coupou-con {
+            margin: auto;
+            text-align: center;
+        }
+
+        .coupou-box {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .coupou-box>div {
+            margin: .5rem;
+        }
+
+        .cb2 {
+            min-width: 40%;
+            /* width: ; */
+        }
+
+        .cb3 {
+            max-width: 40%;
+            white-space: nowrap;
+        }
+
+        #coupoucode {
+            text-align: center;
+        }
+
+
+    /* this is the icoin */
+    /* .coin1>.icn {
+        font-size: 30px;
+        position: absolute;
+        left: 30px;
+        top: 8px;
+    } */
+
+    /* [class^="icn-"], [class*=" icn-"] {
+        font-family: icon,sans-serif !important;
+        speak-as: never;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icn-usd::before {
+        content:"\e64c"
+    }
+
+    .icn-btc{
+        content: "\e607";
+    } */
+/* END OF THIS NONSENSE CODE  */
+

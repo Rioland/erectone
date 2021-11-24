@@ -1,0 +1,319 @@
+body {font-family: "Lato", sans-serif; font-size: medium;}
+.w3-highway-brown
+{color:#fff;background-color:#633517}
+
+.w3-highway-red
+{color:#fff;background-color:#a6001a}
+
+.w3-highway-orange
+{color:#fff;background-color:#e06000}
+
+.w3-highway-schoolbus
+{color:#fff;background-color:#ee9600}
+
+.w3-highway-yellow
+{color:#fff;background-color:#ffab00}
+
+.w3-highway-green
+{color:#fff;background-color:#004d33}
+
+.w3-highway-blue
+{color:#fff;background-color:#00477e}
+
+.wrap{
+z-index: 10;
+}
+
+.logo{max-width: 100px; width: 100%; max-height: 60px; height: 100%; }
+/* .logo{margin-bottom: -50px;} */
+/* #home{width: 150%;} */
+/* #invests,#products{height: 200px;} */
+
+#navspace{margin-left: 10px; display: none; }
+#navrspace{margin-right: 110px; display: none;}
+
+#tubutton{ margin-top: 6px;  }
+#onebtn{margin-top: 7px;}
+#onebtn3{margin-top: 15px;}
+#onebtn4{margin-top: 2px;}
+#onebtn5{margin-top: 15px;}
+/* .expandmore{padding-bottom: 190px;} */
+/* #tarrow{margin-top: 10px;} */
+#login,#login1,#register,#register1{transition: .4s;}
+#login:hover , #login1:hover{ transform: translateY(-4);}
+#register:hover, #register1:hover{transform: translateY(-4);}
+/* #login{padding-right:10px;} */
+/* #register{padding-left: 30px;} */
+
+/* #home{padding-left: 50px;} */
+
+#tarrow:hover{transform: rotateX(150deg);}
+#tarrow{padding-left: 10px;}
+/* #tarrow{margin-top:100p ;} */
+/* #more{line-height: 35px;} */
+
+
+/* RESPONSIVE VIEW  */
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { 
+    .desktopview{display: none;}
+    .miniview{display: block;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .desktopview{display: none;}
+    .miniview{display: block;}
+ }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+  
+ }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #navspace{display: none;} 
+  #navrspace{display: none;}
+  .mobile-container,.mini-views{display: none;}
+  }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+   .desktopview{display: block;}
+   .miniview{display: none; }
+   .mobile-container,.mini-views{display: none;}
+   }
+
+   /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+    #navspace{display: block;} #navrspace{display: block;}
+}
+
+
+.fullwidth{min-width: 100%;}
+.body-space{padding: 15px; }
+#topmargin{margin-top: 25px; position: relative;}
+#angleup{display: none; z-index: 2;}
+#angledown{z-index: 1;}
+#instafont,#instafont-mini{font-size: 25px; color: lightskyblue; padding-right: 10px;}
+#mobi{font-weight: bolder;font-size: 30px; color: lightskyblue; padding-right: 10px;}
+#leftspace{padding-left: 5px; }
+.miniview{padding: 15px;}
+
+.instafont-text{
+  padding-left: 5px;
+}
+
+.insta-sub-text{
+  padding-left: 37px;
+}
+
+.display {
+        display: block;
+    }
+        
+        /* ------------*************************************--- ---- */
+        /*----- ----This is for animated navbar dropDown--- ---  */
+        /* ------------*************************************-------- */
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+
+      /* body {
+        background: url('https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;
+        background-size: cover;
+        min-height: 600px;
+        font-family: 'Helvetica Neue', sans-serif;
+      } */
+
+      /* nav {
+        text-align: center;
+      }
+      .menu {
+        display: inline-block;
+      }
+      .menu>li {
+        float: left;
+        color: #e298e1;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        font-size: 17px;
+      }
+      .sub-menu {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px 0;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+      .sub-menu li:hover {
+        background: black;
+      }
+      .menu>li:hover .sub-menu li {
+        transform: scale(1);
+      }
+      .menu>li:hover .sub-menu {
+        transform: scale(1);
+      } */
+
+      /* ------ ---- ************* -------- */
+      /* ----- -- -- CODE COntiues -- --- */
+      /* -------- ***************** -------- */
+
+      .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#firstslide{
+  background: url("./img/firstSlide.png") center;
+  background-size: cover;
+}
+
+.minilogo{
+  padding:10px;
+  margin-top: -10px;
+}
+
+#mobtoggle,#mobtoggle2{
+  font-size: xx-large;
+  border: none;
+}
+
+
+/* ---- --  ----- Mobile dropDown ------- -- --  */
+.mobile-container {
+  /* max-width: 480px; */
+  margin: auto;
+  background-color: #ffffff;
+  height: auto; 
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  padding: 15px;
+}
+.mobile-container,.mini-views{display: none;}
+
+.mobile-container > div{
+  padding: 10px;
+  font-size: larger;
+  border-bottom: 1px solid gainsboro;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#mylink{
+  width: 100%;
+}
+
+.signbtns{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 15px;
+}
+
+#login1{
+    padding-left:1.9em;
+    padding-right:1.9em;
+}
+
+#login1,#register1{
+  max-width: 260px;
+  height: auto;
+  width:100%;
+}
+
+.lgbtn-con{
+  padding-right: 20px;
+}
+
+.regbtn-con{
+  padding-left: 20px;
+}
+
+.list:hover{background-color: #f5f7fa ;}
+a{
+  text-decoration: none;
+}
+
+.for-every{
+  padding: 30px;
+}
+
+.mini-padding-top{
+    padding-top: 20px;
+}
+
+.for-every-con > li{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.blue-back{
+  background-color: #1bb6c1;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.insta-sub-text1{
+  padding-left: 45px;
+
+}
+ 
+
+/* .list-a > div {
+  padding: 10px;
+} */
+
+.list-b, .fees,.list-a > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.list-b{
+  padding-left: 6px;
+}
+ 
+
+.hold-btn{
+  position: relative;
+  margin: auto
+}
+
+/* #toggleout{
+  z-index: 2;
+}
+#toggle-in{
+  z-index: 1;
+} */
+
+.not-btn{
+  font-size: larger;
+}
+#toggle-in{
+  display: none;
+}

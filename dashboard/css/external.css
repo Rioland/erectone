@@ -1,0 +1,821 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+    text-decoration:none;
+    font-family: sans-serif;
+    box-sizing: border-box
+}
+  html {
+    box-sizing: border-box
+} 
+body{
+    /* background-color: rgb(240, 244, 240); */
+    background-color: white;
+}
+.middilefy{
+    text-align: center;
+    font-size: 29px;
+    font-weight: bolder;
+}
+.sec1{
+    background-color: rgb(240, 244, 240);
+    padding: 40px 300px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 10px 0px;
+}
+.tr1{
+    border-bottom: 1px solid #c6deff;
+}
+.tr1 th{
+    font-size: 12px;
+    color: #4863a0;
+}
+.tr2{
+    word-spacing: 10px;
+    line-height: 20px;
+    height: 150px;
+    border-bottom: 1px solid #c6deff;
+}
+.minwidth4{
+    font-size: 15px;
+    color: #666362;
+}
+.minwidthp{
+    font-size: 14px;
+    color: #4863a0;
+}
+.tr2buttt{
+    width: 130px;
+    height: 45px;
+    border-radius: 10px 10px;
+    font-size: 13.5px;
+    color: white;
+    background-color: #43bfc7;
+}
+.colord{
+    color: #666362;
+    font-size: 14px;
+    padding-bottom: 13px;
+}
+.secpart{
+    display: none;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .sec1{
+    padding: 40px 50px;
+}
+}
+
+@media screen and (max-width: 768px){
+    .secpart1{
+        display: none;
+    }
+    .secpart{
+        display: grid;
+        justify-content: center;
+        
+    }
+   .box{
+    width: 470px;
+    height: 220px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    /* background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
+ }
+ .box h1{
+     margin-top: 15px;
+     font-size: 16px;
+     color: #666362;
+ }
+ .box p{
+     font-size: 13px;
+     margin-top: 5px;
+     color: #4863a0;
+ }
+ .twostraight{
+     display: flex;
+     justify-content: space-between;
+ }
+ .twostraight2{
+     display: flex;
+     justify-content: space-between;
+ }
+ .twostraight h4{
+     font-size: 12px;
+     color: #666362;
+ }
+.twostraight2{
+    font-size: 12px;
+}
+.twostraight2{
+    margin-top: 10px;
+}
+.twostraight2 h4{
+    color: #666362;
+}
+.boxbutt{
+    width: 130px;
+    height: 45px;
+    border-radius: 10px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #43bfc7;
+}
+.boxbuttend{
+    margin-top: 15px;
+    display: grid;
+    justify-content: end;
+}
+
+/* Table column for address */
+.tabadd{
+    display: none;
+}
+.cooporate{
+    display: none;
+}
+}
+
+/* ==================  SECTION 2  ========================= */
+.sec2{
+    background-color: white;
+    /* height: 1900px; */
+}
+.limcoms{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bolder;
+}
+.roww{
+    display: grid;
+    justify-content: center;
+}
+/* Create three equal columns that floats next to each other */
+.columnnP {
+  display: flex;
+  width: 1100px;
+  height: 100px;
+  display: none; /* Hide columns by default */
+}
+.contenttP{
+  padding: 10px 18px;
+}
+
+/* Clear floats after rows */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  width: 150px;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+/* Add a grey background color on mouse-over */
+.btnn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btnn.active {
+  background-color: #666;
+   color: white;
+}
+/* =========SECTION2 BODY'S STYLE UP========== */
+.widthty{
+    text-align: center;
+}
+.secpartsec2{
+    display: none;
+}
+.tr2td{
+    display: flex;
+    margin-top: 32px;
+}
+.tr2td img{
+     width: 50px;
+    height: 30px;
+}
+.tr2td p{
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+/* =============FOR CRYPOCURRENCY SIDE================= */
+ /* .tr2crypto p{
+     color: #666362;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 13px;
+}  */
+.colord{
+    color: #666362;
+    font-size: 14px;
+    padding-bottom: 13px;
+}
+.tr2crypto{
+    word-spacing: 10px;
+    line-height: 20px;
+    height: 55px;
+    border-bottom: 1px solid #c6deff;
+}
+.tr2tdcrypto{
+    display: flex;
+    margin-top: 1px;
+}
+.tr2tdcrypto p{
+    font-weight: 600;
+    margin-top: 8px;
+      color: #666362;
+    margin-left: 10px;
+}
+.tr2tdcrypto img{
+     width: 50px;
+    height: 30px;
+}
+.divpaycrypt{
+    display: flex;
+}
+.paycrypt{
+    padding: 0px 10px;
+    margin-right: 240px;
+    font-size: 18px;
+    color: #156867;
+    /* background-color: rgb(240, 244, 240); */
+}
+.cryptoadcash{
+    margin-top: 10px;
+    width: 470px;
+    height: 240px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+}
+.cryptimggtxtflex{
+    margin-top: 30px;
+    display: flex;
+}
+.cryptimggtxtflex img{
+    width: 50px;
+    height: 30px;
+}
+.cryptimggtxtflex p{
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px){
+        .columnnP {
+  display: flex;
+  width: 1000px;
+  height: 100px;
+  display: none; /* Hide columns by default */
+}
+.contenttP{
+  padding: 10px 18px;
+}
+
+/* Clear floats after rows */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  width: 150px;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+/* Add a grey background color on mouse-over */
+.btnn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btnn.active {
+  background-color: #666;
+   color: white;
+}
+/* =========SECTION2 BODY'S STYLE UP========== */
+.widthty{
+    text-align: center;
+}
+.secpartsec2{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .columnnP {
+  display: flex;
+  width: 700px;
+  height: 100px;
+  display: none; /* Hide columns by default */
+}
+.contenttP{
+  padding: 10px 18px;
+}
+
+/* Clear floats after rows */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  width: 150px;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+/* Add a grey background color on mouse-over */
+.btnn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btnn.active {
+  background-color: #666;
+   color: white;
+}
+/* =========SECTION2 BODY'S STYLE UP========== */
+.widthty{
+    text-align: center;
+}
+.secpartsec2{
+    display: none;
+}
+}
+@media screen and (max-width: 768px){
+.sec2{
+    background-color: white;
+    /* height: 6200px; */
+}
+.secpartsec2{
+        display: grid;
+        justify-content: center;
+    }
+.contenttP{
+        padding: 0px;
+    }
+.boxxi{
+    width: 470px;
+    height: 270px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+ }
+ .boxxi h1{
+     margin-top: 15px;
+     font-size: 16px;
+     color: #666362;
+ }
+ .boxxi p{
+     font-size: 13px;
+     margin-top: 5px;
+     color: #4863a0;
+ }
+ .twostraightti{
+     display: flex;
+     justify-content: space-between;
+ }
+ .twostraightti2{
+     display: flex;
+     justify-content: space-between;
+     align-content: center;
+ }
+ .twostraightti h4{
+     font-size: 12px;
+     align-self: center;
+     color: #666362;
+ }
+ .twostraightti p{
+    font-size: 12px;
+    align-self: center;
+    line-height: 20px;
+ }
+ .twostraightti2 h4{
+    color: #666362;
+    align-self: center;
+}
+.twostraightti2 p{
+     font-size: 12px;
+    align-self: center;
+    line-height: 20px;
+}
+.twostraightti2{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.imggtextflex{
+    margin-top: 20px;
+    display: flex;
+}
+.imggtextflex img{
+    width: 50px;
+    height: 30px;
+}
+.imggtextflex p{
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+ /* ===== fOR SECTION2 MAX WIDTH ====*/
+.iconimgflex{   
+    display: flex;
+    margin-top: 20px;
+    color: #4863a0;
+
+}
+.boxxicurrency{
+    width: 450px;
+    height: 47px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+ }
+ .boxxicrypto{
+    width: 450px;
+    height: 200px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+ }
+
+/* Table column for address */
+.visacolmn{
+    display: none;
+}
+.mastercolmn{
+    display: none;
+}
+/* Boxxi for SWIFT */
+.boxxiswift{
+    width: 470px;
+    height: 453px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+}
+.boxxiswift h1{
+     margin-top: 15px;
+     font-size: 16px;
+     color: #666362;
+ }
+.boxxiswift p{
+     font-size: 13px;
+     margin-top: 5px;
+     color: #4863a0;
+ }
+
+ /* Boxxi for boxxiAdvcash */
+ .boxxiAdvcash{
+    width: 470px;
+    height: 270px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+}
+.boxxiAdvcash h1{
+     margin-top: 15px;
+     font-size: 16px;
+     color: #666362;
+ }
+.boxxiAdvcash p{
+     font-size: 13px;
+     margin-top: 5px;
+     color: #4863a0;
+ }
+
+ /* Boxxi for boxxiskrill */
+ .boxxiskrill{
+    width: 470px;
+    height: 300px;
+    border-radius: 5px 5px;
+    padding: 0px 10px;
+    background-color: rgb(240, 244, 240);
+}
+.boxxiskrill h1{
+     margin-top: 15px;
+     font-size: 16px;
+     color: #666362;
+ }
+.boxxiskrill p{
+     font-size: 13px;
+     margin-top: 5px;
+     color: #4863a0;
+ }
+}
+
+/* ======================  SECTION 3  ============================= */
+.sec3{
+    background-color: white;
+    padding:  1670px 130px 100px;
+    border-bottom: 1px solid #c6deff;
+}
+.ulup li{
+    list-style: decimal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4863a0;
+}
+.sec3part2 h1{
+     font-size: 13px;
+     color: #4863a0;
+}
+.sec3part2 p{
+      font-size: 11px;
+      margin-top: 5px;
+      color: #4863a0;
+      line-height: 18px;
+}
+.spanstyli{
+     color: #4863a0;
+     font-size: 11px;
+     font-weight: bold;
+}
+.sec3part2 h2{
+     font-size: 13px;
+     color: #4863a0;
+     margin-top: 5px;
+}
+.withraw{
+    margin-top: 50px;
+}
+/* ======Bank withdrawal styli========= */
+.bankdiv h2{
+     font-size: 13px;
+     color: #4863a0;
+     margin-top: 5px;
+}
+.bankdiv p{
+     font-size: 11px;
+      margin-top: 5px;
+      color: #4863a0;
+      line-height: 18px;
+}
+@media screen and (max-width: 768px){
+   .sec3{
+    padding:  6020px 40px 50px;
+}  
+}
+/* @media screen and (max-width: 992px) and (min-width: 768px){
+     .sec3{
+    padding:  90px 40px;
+} 
+}*/
+
+/* =====FOOTER SECTION 4======= */
+.sec4{
+   margin-top: 0px;
+}
+.foooter{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 50px 100px 100px;
+    /* padding: 30px 150px; */
+    /* border-bottom: 1px solid #c6deff; */
+}
+.footergrid{
+    display: none;
+}
+.ulstyle{
+    margin-top: 10px;
+}
+.listyle{
+    color: #26374c;
+    font: 14px "open sans",serif;
+    line-height: 30px;
+}
+.listyle:hover{
+   color: #43bfc7;
+}
+.divv2 h3{
+    font: 18px "open sans",serif;
+    color: #26374c;
+    font-weight: 600;
+    /* padding-bottom: 12px; */
+}
+.divvflexx h3{
+    font-size: 14x;
+    color: #2c3539;
+}
+.social-links{
+    margin-top: 6px;
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fab{
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    line-height: 28px;
+    border: 1px solid #3D3C3A;
+    border-radius: 10px;
+    color: #3D3C3A;
+    cursor: pointer;
+}
+.social-links .fab:hover{
+    background: #3D3C3A;
+    color: #fff;
+}
+.divflexxbutt{
+    padding: 10px;
+    /* height: 30px; */
+    /* width: 130px; */
+    margin-top: 20px;
+    border-radius: 10px 10px;
+    transition: .4s;
+}
+.divflexxbutt:hover{
+      background: #3D3C3A;
+      color: #fff;
+       transform: translateY(-4px);
+}
+.imageflex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.imageflex img{
+    width: 40px;
+    height: 30px;
+}
+@media screen and (max-width: 992px){
+.secc4{
+    margin-top: 0px;
+}
+ .foooter{
+        display: none;
+}
+.footergrid{
+    display: grid;
+    justify-content: space-around;
+    background-color: white;
+    padding: 50px 0px 1100px; 
+    height: 600px;
+
+    /* display: flex;
+    justify-content: space-around;
+    background-color: #2C353A;
+    height: 600px;
+    padding: 50px 100px 650px; */
+}
+.maxgrid1{
+    display: flex;
+   margin-right: 80px;
+}
+.maxdivv1{
+    margin-left: 80px;
+}
+.maxgrid2{
+    display: flex;
+   margin: 30px 100px 0px 0px ;
+}
+.maxgrid3{
+    display: grid;
+}
+.divv2{
+    margin-left: 80px;
+}
+/* .maxdivv1{
+    margin-right: 50px;
+} */
+.maxdivv1 h3{
+    font-size: 14x;
+   color: #2c3539;
+    /* padding-bottom: 12px; */
+}
+.maxdivv2 h3{
+    font-size: 14x;
+    color: #2c3539;
+    /* padding-bottom: 12px; */
+}
+.listyle{
+    color: #5c5858;
+    font-size: 15px;
+    line-height: 30px;
+}
+.listyle:hover{
+    color: #43bfc7;
+}
+/* .divvflexx h3{
+    color: white;
+} */
+.socialimgge{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.h3follow{
+     margin-left: 80px;
+    color: #2c3539;
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fab{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 38px;
+    border: 1px solid #3D3C3A;
+    border-radius: 15px;
+    color: #3D3C3A;
+    cursor: pointer;
+}
+.social-links .fab:hover{
+    background: #3D3C3A;
+    color: #fff;
+}
+.socialimgge img{
+    width: 50px;
+    height: 50px;
+}
+.divflexxbuttmax{
+    padding: 10px;
+    min-height: 40px;
+    height: 100%;
+    min-width: 140px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px 10px;
+    transition: .4s;
+}
+.divflexxbuttmax:hover{
+      background: #3D3C3A;
+      color: #fff;
+       transform: translateY(-4px);
+}
+.imageflexmax{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.imageflexmax img{
+    width: 40px;
+    height: 40px;
+}
+}
+/* @media screen and (max-width: 992px) and (min-width: 768px){
+.secc4{
+    margin-top: 1500px;
+} 
+}*/

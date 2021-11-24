@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     box-sizing: border-box;
+}
+.wrap{
+    background-color: white;
+    text-align: start;
+    box-shadow: 10px black;
+    background-attachment: fixed;
+    background-clip: border-box;
+    position: absolute;
+    width: 100%;
+}
+.wrap ul{
+    list-style: none;
+    display: inline-flex;
+    color: black;
+    box-shadow: 10px black;
+}
+
+.wrap ul li{
+    width: 150px;
+    margin: 5px;
+     /* margin-top: 5px;
+     margin-top: 5px; */
+    padding: 5px;
+}
+.wrap ul li a{
+    text-decoration: none;
+}
+.sub-menu-prod{
+    display: none;
+    
+}
+.wrap ul li:hover .sub-menu-prod{
+    display: block;
+    background-color: white;
+    color: white;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.sub-menu-prod ul li{
+    width: 300px;
+    height: auto;
+    padding: 16px;
+    border-left: 1px solid whitesmoke;
+}
+.sub-menu-h{
+    font-size: large;
+    font-weight: bold;
+    color: grey;
+}
+.sub-menu-fee{
+     display: none;
+}
+.wrap ul li:hover .sub-menu-fee{
+    display: block;
+    background-color: white;
+    color: white;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.wrap ul li:hover .sub-menu-fee ul{
+    display: block;
+}
+.sub-menu-comp{
+    display: none;
+}
+
+.wrap ul li:hover .sub-menu-comp ul{
+  display: block;
+}
+.wrap ul li:hover .sub-menu-comp{
+    display: block;
+    background-color: white;
+    color: white;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.sec2 {
+    width: 100%;
+    height: 800px;
+    
+    background-color: snow;
+    padding-top: 100px;
+}
+.sec2 .min{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding-left: 35px;
+    background-color: transparent;
+  
+}
+.sec2 .min div{
+    width: 50%;
+    padding: 20px;
+   
+}
+.sec2 .min .set2-div2{
+   background-color: transparent;
+   background-image: url("./images/logo.jpg"); 
+   /* box-sizing: 100%; */
+   /* width: 45%; */
+  
+   
+}
+
+.ss1{
+    font-size: 60;
+    font-weight: bolder;
+    /* padding: 15px; */
+}
+.ss2{
+    width: 100px;
+   margin-right: 50px;
+    
+}
+.bid{
+    width: 50px;
+    height: 25px;
+     background-color: green;
+    border-radius: 20px;
+    margin-top: 30px; 
+    text-align: center;
+    color: white;
+    justify-items: center;
+}
+
+/* =========== PART 2 ============  */
+.topic-h{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.section-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 20px;
+}
+.section-container{
+    background-color: #f5f7fa !important;
+}
+
+.section-text-con,.topic-btn-con{
+    padding: 10px;
+}
+
+.topic-txt{
+    font-size: 25px;
+    color: gray;
+}
+
+.topic-btn{
+    width: 256px;
+    height: auto;
+    padding: 10px;
+    background-color: #87ceeb;
+    border-radius: 10px;
+    font-size: x-large;
+    transition: .4s;
+    border:#87ceeb ;
+}
+.topic-btn:hover{
+    transform: translateY(-4px);
+    opacity: .7;
+}
+
+/* -------  RESPONSIVE VIEWS ---------  */
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     .set2-div2{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .set2-div2{
+        display: none; }
+    .section-text-con{
+        text-align: center; }
+        .topic-btn,.topic-btn-con{ text-align: center;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+     .set2-div2{
+        display: block;
+    }
+        .topic-btn-con,.section-text-con{ text-align: justify;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .section-text-con{
+    /* padding-left: 90px;
+    margin-left: 100px;  */
+  }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+} 
+

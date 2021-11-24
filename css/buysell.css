@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: medium;
+    z-index: 1;
+}
+
+.al3 {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .buying {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .buy {
+            margin: 10px;
+        }
+
+        .sell {
+            margin: 10px;
+        }
+
+        .mg2 {
+            margin: 20px;
+        }
+        .hover:hover{
+         background-color: blue;
+         color: white;
+         border: 2px solid transparent;
+        }
+
+        /* -----------==============----------- */
+        /* -------- --- My styles --- -----  */
+        .cards-container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            /* padding: 20px; */
+        }
+        
+        .cards-container > div{
+            width:290px;
+        }
+
+        .card{
+          /*width: 290px;*/
+          border-radius: 10px;
+          line-height: 2.1;
+          position: relative;
+        }
+
+        .price-tag{
+          width: 100%;
+          background-color: #528fcc;
+          font-size: x-large;
+          font-weight: bold;
+          color: white;
+          padding:5px;
+          border-radius: 10px 10px 0px 0px;
+        }
+
+     .buy-btn{
+        border: 3px solid #528fcc;
+        width: 100%;
+        border-radius: 11px;
+        background-color: white;
+        color: #528fcc;
+        font-size: x-large;
+     }
+     .buy-btn:hover{
+        background-color: green;
+        color: white;
+        border: green;
+     }
+
+     .padding-sides{
+       padding-left: 25px;
+       padding-right: 25px;
+     }
+     
+     .timer{
+       border-radius: 50%;
+       border: transparent;
+       padding-block: 50px;
+       text-align: center;
+       margin: 30px;
+       position: relative;
+       animation: spiner 5s linear 5s infinite alternate;
+     }
+
+     @keyframes spiner {
+         0%   {border-top: 1px solid #40d8e0;}
+          25%  {border-right: 2px solid #40d8e0;}
+          50%  {border-bottom: 3px solid #40d8e0;}
+          75%  {border-left: 4px solid #40d8e0;}
+          100% {border: 5px solid #40d8e0;}
+     }
+
+     .font-topic{
+       font-size: 60px;
+       font-weight: bold;
+     }
+     .font-topic-2{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 18px;
+     }
+
+     .f-bigi{
+       font-size: xx-large;
+     }
+
+     .ff-bigi{
+       font-weight: bold;
+       color: #528fcc;
+       text-align: center;
+       background-color: whitesmoke;
+       padding: 10px;
+     }
+
+     .input-con-main{
+       border: 1px solid red;
+       padding: 10px;
+       margin-left: 25px;
+       margin-right: 25px;
+     }
+     .input-con-main:hover{
+       border: 1px solid blue;
+     }
+     .usd:hover{
+       border: transparent;
+     }
+   
+     .warn{
+       color: red;
+       float: left;
+       padding-left: 30px;
+     }
+     
+      .usd{ 
+        font-weight: bolder;
+        font-stretch: extra-expanded;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .two-h:hover{
+        background-color: dodgerblue;
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+        transition: all ease 0.3s;
+        color: white;
+        }
+        .five-h:hover{
+        background-color: dodgerblue;
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+        transition: all ease 0.3s;
+        color: white;
+        }
+      .one-k:hover{
+        background-color: dodgerblue;
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+        transition: all ease 0.3s;
+        color: white;
+      }
+      .your-amt:hover{
+          background-color: dodgerblue;
+        transform-style: preserve-3d;
+        transform: scale(1.02);
+        transition: all ease 0.3s;
+        color: white;
+      }

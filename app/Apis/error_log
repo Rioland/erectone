@@ -1,0 +1,96 @@
+[16-Aug-2021 07:34:38 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'avpvgymy_erect1.users' doesn't exist in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:453
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php(453): PDOStatement->execute(Array)
+#1 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(16): DataBase::signin_user('adedamolariolan...', '12222')
+#2 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 453
+[16-Aug-2021 14:57:24 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'avpvgymy_erect1.users' doesn't exist in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:453
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php(453): PDOStatement->execute(Array)
+#1 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(16): DataBase::signin_user('riotech2222@gma...', '333333')
+#2 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 453
+[16-Aug-2021 15:14:09 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'avpvgymy_erect1.users' doesn't exist in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:456
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php(456): PDOStatement->execute(Array)
+#1 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(16): DataBase::signin_user('riotech2222@gma...', 'fffff')
+#2 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 456
+[16-Aug-2021 15:18:09 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'avpvgymy_erect1.users' doesn't exist in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:456
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php(456): PDOStatement->execute(Array)
+#1 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(16): DataBase::signin_user('riotech2222@gma...', 'fffff')
+#2 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 456
+[16-Aug-2021 17:08:50 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(10): DataBase::register('riotech2222@gma...', '1234567', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[16-Aug-2021 17:10:13 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(10): DataBase::register('riotech2222@gma...', 'hhhh', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 09:32:41 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(10): DataBase::register('', '', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 09:36:28 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(9): DataBase::register('', '', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 09:44:08 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(10): DataBase::register('', '', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 09:45:30 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(10): DataBase::register('', '', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 10:39:06 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(13): DataBase::register('riotech2222@gma...', '111', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 10:45:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:512
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(13): DataBase::register('riotech2222@gma...', '111', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 512
+[17-Aug-2021 10:54:02 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:509
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(13): DataBase::register('riotech2222@gma...', '111', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 509
+[17-Aug-2021 10:56:00 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method DataBase::generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php:509
+Stack trace:
+#0 /home4/avpvgymy/public_html/erect1/app/Apis/api.php(13): DataBase::register('riotech2222@gma...', '111', 'Nigeria')
+#1 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 509
+[18-Aug-2021 12:01:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/api.php:45
+Stack trace:
+#0 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 45
+[18-Aug-2021 12:02:37 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/api.php:45
+Stack trace:
+#0 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 45
+[18-Aug-2021 23:02:11 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function generate_token() in /home4/avpvgymy/public_html/erect1/app/Apis/api.php:46
+Stack trace:
+#0 {main}
+  thrown in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 46
+[18-Aug-2021 23:06:43 America/Boise] PHP Warning:  require(PHPMailer-master/src/Exception.php): failed to open stream: No such file or directory in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 595
+[18-Aug-2021 23:06:43 America/Boise] PHP Warning:  require(PHPMailer-master/src/Exception.php): failed to open stream: No such file or directory in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 595
+[18-Aug-2021 23:06:43 America/Boise] PHP Fatal error:  require(): Failed opening required 'PHPMailer-master/src/Exception.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/avpvgymy/public_html/erect1/app/Apis/database/DataBase.php on line 595
+[28-Aug-2021 01:37:14 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:107) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 112
+[28-Aug-2021 01:37:31 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:107) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 112
+[28-Aug-2021 01:40:01 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:111) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 112
+[29-Aug-2021 09:23:03 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:57) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 58
+[29-Aug-2021 09:23:14 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:57) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 58
+[29-Aug-2021 09:35:43 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:53) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 67
+[29-Aug-2021 09:38:30 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/avpvgymy/public_html/erect1/app/Apis/api.php:53) in /home4/avpvgymy/public_html/erect1/app/Apis/api.php on line 67

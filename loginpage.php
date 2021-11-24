@@ -226,7 +226,7 @@ $client->addScope("profile");
                     dataType: "text",
                     success: function(response) {
                         if (response == true) {
-                          window.location.href="buysell";
+                          window.location.href="client";
                         } else {
                             alert(response);
                             $(".logbtn").show();

@@ -531,6 +531,7 @@ class DataBase
             $res = $stm->fetch();
             $_SESSION['userid'] = $res->id;
             $_SESSION['USER'] =$res;
+            $_SESSION['router']="./pages/buy_sell.php";
             return true;
         }
         return false;

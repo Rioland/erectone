@@ -6,6 +6,10 @@ if (DataBase::is_login()==false) {
 }
 $USER=$_SESSION["USER"];
 $connection=DataBase::getConn();
+$dollar=DataBase::getdollaBalance();
+$eth=DataBase::getethBalance();
+$euro=DataBase::geteroBalance();
+$btc=DataBase::getbtcBalance();
 ?>
 
 <!doctype html>
@@ -75,7 +79,11 @@ require "./dash3nav.php";
 
 <!-- ----- --- - The Body - ---- -----  -->
 <?php
-require "./pages/buy_sell.php";
+if(isset($_SESSION['router']) and !empty($_SESSION['router'])){
+    require $_SESSION['router'];
+}else{
+    require "./pages/buy_sell.php";
+}
 ?>
 <!-- /. end of body  -->
 

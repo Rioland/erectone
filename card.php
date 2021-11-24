@@ -358,10 +358,7 @@ $stm->execute(array(":id" => $id));
 
 </head>
 
-<!-- ----- --- - The Body - ---- -----  -->
-<?php
-// require "./buysellbody.php";
-?>
+
 
 <body>
 
@@ -380,16 +377,16 @@ $stm->execute(array(":id" => $id));
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ml-4">
-                        <a class="nav-link active" style="color: white;" aria-current="page" href="buysell">BUY/SELL</a>
+                    <li id="bs" class="nav-item ml-4">
+                        <a class="nav-link active" style="color: white;" aria-current="page" href="#">BUY/SELL</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="tr" class="nav-item">
                         <a class="nav-link active" style="color: white;" aria-current="page" href="trade">TRADE</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="fin" class="nav-item">
                         <a class="nav-link active" style="color: white;" aria-current="page" href="./dashboard/finance.php">FINANCE</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="card" class="nav-item">
                         <a class="nav-link active" style="color: white;" aria-current="page" href="./card.php">CARDS</a>
                     </li>
                     <li class="nav-item">

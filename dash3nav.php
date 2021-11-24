@@ -121,10 +121,10 @@
                 <!-- ---- Left navbar links ---- -->
                 <div class="collapse navbar-collapse order-3" id="navbarCollapse">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="buysell.php" class="nav-link">BUY/SELL</a>
+                        <li id="bs" class="nav-item">
+                            <a href="" class="nav-link">BUY/SELL</a>
                         </li>
-                        <li class="nav-item">
+                        <li id="tr" class="nav-item">
                             <a href="./trade.php" class="nav-link">TRADE</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -320,13 +320,13 @@
                             <!-- Left navbar links -->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> <i class="fas fa-dollar-sign"></i> 0.00 </a>
+                                    <a class="nav-link" href="#"> <i class="fas fa-dollar-sign"></i><?php echo $dollar; ?> </a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="#"><i class="fas fa-euro-sign"></i> 0.00 </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#"><i class="fas fa-euro-sign"></i> <?php echo $euro; ?></a></li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fab fa-btc"></i> 0.00000 </a>
+                                    <a class="nav-link" href="#"><i class="fab fa-btc"></i> <?php echo $btc; ?> </a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="#"><i class="fab fa-ethereum"></i> 0.00000 </a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#"><i class="fab fa-ethereum"></i> <?php echo $eth; ?> </a> </li>
                             </ul>
                         </div>
                     </div><!-- /.col -->
@@ -467,6 +467,27 @@
 
         <script>
     $(document).ready(function () {
+
+
+   $("#bs a").click(function (e) { 
+       e.preventDefault();
+       $.ajax({
+           type: "post",
+           url: "auth",
+           data: {
+               router:"./pages/buy_sell.php"
+           },
+           dataType: "text",
+           success: function (response) {
+               window.location.reload();
+           }
+       });
+       
+   });
+
+
+
+        // close tnotification
         $(".close").click(function (e) { 
             e.preventDefault();
             let id=$(this).attr("id");
@@ -474,11 +495,13 @@
                 type: "post",
                 url: "auth",
                 data: {
-                    id:id
+                    id:id,
+                    action:"detetenotif"
                 },
-                dataType: "dataType",
+                dataType: "text",
                 success: function (response) {
-                    
+                    console.log(response);
+                    // alert(response)
                 }
             });
             
